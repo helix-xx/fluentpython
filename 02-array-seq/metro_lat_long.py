@@ -1,3 +1,4 @@
+## python format string
 metro_areas = [
     ('Tokyo', 'JP', 36.933, (35.689722, 139.691667)),   # <1>
     ('Delhi NCR', 'IN', 21.935, (28.613889, 77.208889)),
@@ -11,3 +12,5 @@ fmt = '{:15} | {:9.4f} | {:9.4f}'
 for name, cc, pop, (latitude, longitude) in metro_areas:  # <2>
     if longitude <= 0:  # <3>
         print(fmt.format(name, latitude, longitude))
+        
+
